@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'variables/colors';
+
+body {
+  min-height: 100vh;
+  background-color: $bg-primary;
+}
+
+h1 {
+  color: $txt-primary;
+}

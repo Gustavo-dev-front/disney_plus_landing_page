@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../assets/fonts/Avenir-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../assets/fonts/Avenir-Bold.woff2") format("woff2");
+}
+
+$primary-font: "Avenir" , sans-serif;
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-small-extra {
+  font-size: 18px;
+}
+
+.font-medium {
+  font-size: 20px;
+}
+
+.font-medium-extra {
+  font-size: 24px;
+}
+
+.font-large {
+  font-size: 40px;
+}
+
+.font-large-extra {
+  font-size: 44px;
+}
