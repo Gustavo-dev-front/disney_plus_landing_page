@@ -1,0 +1,67 @@
+@import "../components/button";
+@import "../variables/screens";
+@import "../variables/colors";
+
+.hero {
+  height: 100vh;
+  background: url(../../../dist/imgs/hero_desktop.jpeg) no-repeat top center /
+    contain;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-height: 100%;
+    text-align: center;
+
+    @media only screen and (max-width: $tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  &__get {
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+
+  &__plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        max-height: 50px;
+        height: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__disclaimer {
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    background: url(../../../dist/imgs/hero_tablet.jpg) no-repeat top center /
+      contain;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    background: url(../../../dist/imgs/hero_celular.jpeg) no-repeat top center /
+      contain;
+  }
+}

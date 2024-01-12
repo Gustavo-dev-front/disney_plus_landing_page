@@ -1,3 +1,12 @@
 $bg-primary: #030814;
+$btn-bg-primary: #6421ff;
 $txt-primary: #f9f9f9;
 $txt-secundary: #c0c0c0;
+
+.text-primary {
+  color: $txt-primary;
+}
+
+.text-secundary {
+  color: $txt-secundary;
+}

@@ -1,0 +1,15 @@
+@import '../variables/colors';
+
+.ui-button {
+  padding: 15px 0;
+  background-color: $btn-bg-primary;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+}

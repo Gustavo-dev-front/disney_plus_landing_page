@@ -1,11 +1,13 @@
 @import 'reset';
 @import 'variables/colors';
+@import 'global';
+@import 'sections/hero';
 
 body {
   min-height: 100vh;
   background-color: $bg-primary;
 }
 
-h1 {
-  color: $txt-primary;
+.container {
+  padding: 5.6vw;
 }
