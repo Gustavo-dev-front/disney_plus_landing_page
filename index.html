@@ -10,28 +10,67 @@
 
 <body>
 
-  <section class="hero" style="color:white">
+  <section class="hero">
     <div class="container">
       <h1 class="hero__logo"><img src="./dist/imgs/disneyplus.svg" alt="Disney plus logo"></h1>
       <p class="text-primary font-medium">As melhores histórias em um só lugar.</p>
       <a class="hero__get text-primary font-small" href="#">Assinar o Disney+</a>
       <span class="text-secundary font-small">R$ 27,90/mês ou R$ 279,90/ano à vista*</span>
+
       <div class="hero__plans">
         <div class="hero__plans__item">
           <img src="./dist/imgs/logos/disney_star_plus.png" alt="Disney plus + Star plus">
-          <a href="#" class="ui-button">Assine agora</a>
+          <a href="#" class="ui-button text-primary">Assine agora</a>
           <span class="text-secundary font-small">R$ 45,90/mês*</span>
         </div>
+
         <div class="hero__plans__item">
           <img src="./dist/imgs/logos/disney_star_plus_starzplay.png" alt="Disney plus + Star plus + StarzPlay">
-          <a href="#" class="ui-button">Assine agora</a>
+          <a href="#" class="ui-button text-primary">Assine agora</a>
           <span class="text-secundary font-small">R$ 45,90/mês*</span>
         </div>
       </div>
+
       <span class="hero__disclaimer text-secundary font-slim">*O preço pode variar caso a assinatura seja feita através
         de outras plataformas.</span>
     </div>
+  </section>
 
+  <section class="shows">
+    <div class="container">
+      <nav class="shows__nav">
+        <ul class="shows__nav__list">
+          <li class="shows__nav__list__item shows__nav__list__item--is-active text-primary" data-show="em-breve">Em breve</li>
+          <li class="shows__nav__list__item text-primary" data-show="populares">Mais populares</li>
+          <li class="shows__nav__list__item text-primary" data-show="star-plus">Mais no star+</li>
+        </ul>
+      </nav>
+
+      <ul class="shows__list shows__list--is-active" id="em-breve">
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/desencantada.jpg" alt="filme desencantada"></li>
+      </ul>
+      <ul class="shows__list" id="populares">
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/willow.jpg" alt="filme willow"></li>
+      </ul>
+      <ul class="shows__list" id="star-plus">
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+        <li class="shows__list__item"><img src="./dist/imgs/em_breve/lobisomem.jpg" alt="filme lobisomem"></li>
+      </ul>
+    </div>
   </section>
 
   <script defer src="./src/scripts/main.js"></script>

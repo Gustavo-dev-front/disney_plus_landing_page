@@ -1,7 +1,8 @@
-@import 'reset';
-@import 'variables/colors';
-@import 'global';
-@import 'sections/hero';
+@import "reset";
+@import "variables/colors";
+@import "global";
+@import "sections/hero";
+@import "sections/shows";
 
 body {
   min-height: 100vh;
