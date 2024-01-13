@@ -58,6 +58,7 @@
   @media only screen and (max-width: $tablet) {
     background: url(../../../dist/imgs/hero_tablet.jpg) no-repeat top center /
       contain;
+    height: 75vh;
   }
 
   @media only screen and (max-width: $mobile) {
