@@ -1,6 +1,7 @@
 @import '../variables/colors';
 
 .ui-button {
+  display: block;
   padding: 15px 0;
   background-color: $btn-bg-primary;
   width: 100%;

@@ -1,0 +1,35 @@
+@import "../variables/screens";
+
+.plans {
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__item {
+      max-width: 350px;
+
+      img {
+        max-height: 80px;
+        height: 100%;
+      }
+
+      .ui-button {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    @media only screen and (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__disclaimer {
+    padding-top: 60px;
+    text-align: center;
+  }
+}
