@@ -1,0 +1,27 @@
+@import "../variables/screens";
+
+.devices {
+  min-height: 50vh;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+
+    &__item {
+      text-align: center;
+
+      &__list {
+        margin-top: 20px;
+      }
+    }
+
+    @media only screen and (max-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
