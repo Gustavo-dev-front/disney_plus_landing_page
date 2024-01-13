@@ -1,0 +1,16 @@
+.watch-your-way {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+
+    .font-medium-extra {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
