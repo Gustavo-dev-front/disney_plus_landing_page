@@ -6,8 +6,10 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
     gap: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
 
     &__item {
       max-width: 350px;
@@ -25,6 +27,7 @@
 
     @media only screen and (max-width: $tablet) {
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
