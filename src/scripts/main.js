@@ -4,7 +4,9 @@ const NAVS = [...document.querySelectorAll("[data-show]")];
 
 const hidden_shows = () => {
   SHOWS.forEach((show) => show.classList.remove("shows__list--is-active"));
-  NAVS.forEach(nav => nav.classList.remove("shows__nav__list__item--is-active"));
+  NAVS.forEach((nav) =>
+    nav.classList.remove("shows__nav__list__item--is-active")
+  );
 };
 
 const unhide_show = ({ target }) => {
@@ -29,20 +31,35 @@ function initTab() {
 
 initTab();
 
-// FAQ 
+// FAQ
 
 const QUESTIONS = [...document.querySelectorAll(".faq__list__item__question")];
 
 const add_listener_faq = () => {
-  QUESTIONS.forEach(question => {
-    question.addEventListener('click', ({target}) => {
-      target.parentNode.classList.toggle("faq__list__item--is-active")
+  QUESTIONS.forEach((question) => {
+    question.addEventListener("click", ({ target }) => {
+      target.parentNode.classList.toggle("faq__list__item--is-active");
     });
   });
-}
+};
 
 function initFaq() {
   add_listener_faq();
-} 
+}
 
 initFaq();
+
+// HEADER
+
+const HERO = document.querySelector(".hero");
+const HEADER = document.querySelector(".header");
+
+function initHeader() {
+  window.addEventListener("scroll", (e) => {
+    const scrolled = e.currentTarget.scrollY;
+    if (scrolled > HERO.clientHeight) HEADER.classList.add("header--show-all");
+    else HEADER.classList.remove("header--show-all");
+  });
+}
+
+initHeader();

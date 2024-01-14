@@ -1,0 +1,59 @@
+@import "../variables/colors";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    max-height: 40px;
+    height: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .ui-button {
+    white-space: nowrap;
+    padding: 10px;
+    color: $txt-primary;
+    border: 1px solid transparent;
+  }
+
+  .ui-button:nth-child(1),
+  &__logo {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+  }
+
+  .ui-button:nth-child(2) {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    border-color: $txt-primary;
+
+    &:hover {
+      background-color: $txt-primary;
+      color: #000000;
+    }
+  }
+
+  &--show-all {
+    background-color: $bg-primary;
+
+    .ui-button:nth-child(1),
+    .header__logo {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
