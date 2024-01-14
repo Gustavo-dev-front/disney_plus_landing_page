@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
 
 gulp.task('sass', function (){
   return gulp.src('./src/styles/**/*.scss')
@@ -14,8 +15,15 @@ gulp.task('imagemin', function() {
   .pipe(gulp.dest("./dist/imgs"));
 });
 
+gulp.task('uglify', function() {
+  return gulp.src('./src/scripts/**/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest("./dist/scripts"));
+});
+
 gulp.task('watch', function() {
   gulp.watch('./src/styles/**/*.scss', gulp.parallel('sass'));
+  gulp.watch('./src/scripts/**/*.js', gulp.parallel('uglify'));
 });
 
 gulp.task('dev', function(callback) {
@@ -23,5 +31,5 @@ gulp.task('dev', function(callback) {
 });
 
 gulp.task('build', function(callback) {
-  gulp.parallel('sass', 'imagemin')(callback);
-})
+  gulp.parallel('sass', 'imagemin', 'uglify')(callback);
+});
