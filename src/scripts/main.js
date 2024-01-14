@@ -1,3 +1,4 @@
+// TABS NAVIGATION
 const SHOWS = [...document.querySelectorAll(".shows__list")];
 const NAVS = [...document.querySelectorAll("[data-show]")];
 
@@ -22,8 +23,26 @@ const run_shows = () => {
   add_listener_shows();
 };
 
-function init() {
+function initTab() {
   run_shows();
 }
 
-init();
+initTab();
+
+// FAQ 
+
+const QUESTIONS = [...document.querySelectorAll(".faq__list__item__question")];
+
+const add_listener_faq = () => {
+  QUESTIONS.forEach(question => {
+    question.addEventListener('click', ({target}) => {
+      target.parentNode.classList.toggle("faq__list__item--is-active")
+    });
+  });
+}
+
+function initFaq() {
+  add_listener_faq();
+} 
+
+initFaq();
